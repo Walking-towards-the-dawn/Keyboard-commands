@@ -1,13 +1,21 @@
-body {
-	background: #12111f;
+* {
 	margin: 0;
 	padding: 0;
 }
 
-p {
+body {
+	background: #12111f;
+}
+
+h1 {
+	padding: 80px 0;
 	text-align: center;
 	font-size: 50px;
 	color: #eee;
+}
+
+ul {
+	list-style: none;
 }
 
 .wrapper {
@@ -16,7 +24,7 @@ p {
 	overflow: hidden;
 }
 
-.wrapper > .scroller {
+.scroller {
 	width: auto;
 	height: calc(70vh + 20px);
 	overflow: auto;
@@ -26,70 +34,22 @@ p {
 
 .slide {
 	width: 60vw;
-	height: 60vh;
 	margin-left: 10vw;
 	position: relative;
 	transition: 1s ease;
 }
 
-.slide > .side__text {
-	width: inherit;
-	height: inherit;
-	transition: 1s ease;
-}
-
-.slide > .side__text:before {
-	content: '';
-	position: absolute;
-	color: #fff;
-	transform: rotate(-90deg);
-	top: 40px;
-	left: -60px;
-}
-
-.slide:nth-child(1) > .side__text::before {
-	content: '01 _____ 06';
-}
-
-.slide:nth-child(2) > .side__text::before {
-	content: '02 _____ 06';
-}
-
-.slide:nth-child(3) > .side__text::before {
-	content: '03 _____ 06';
-}
-
-.slide:nth-child(4) > .side__text::before {
-	content: '04 _____ 06';
-}
-
-.slide:nth-child(5) > .side__text::before {
-	content: '05 _____ 06';
-}
-
-.slide:nth-child(6) > .side__text::before {
-	content: '06 _____ 06';
-}
-
-.slide > .text {
+.slide__container {
+	text-align: center;
+	width: 800px;
 	background: red;
-	position: absolute;
-	/*   right: -50px; */
-	bottom: 20%;
 	color: white;
-	font-size: 80px;
+	line-height: 24px;
 	font-family: arial, sans-serif;
-	line-height: 50px;
 	transition: 0.8s ease;
 }
 
-.slide > .text > h2 {
-	font-size: 75px;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-
-.slide > .text > span {
+.slide__container > span {
 	font-size: 20px;
 	line-height: 20px;
 }

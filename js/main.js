@@ -12,9 +12,7 @@ window.addEventListener('wheel', function (e) {
 	}
 
 	slides.forEach((slide, index) => {
-		let sideText = slide.querySelector('.side__text');
-		let text = slide.querySelector('.text');
-		sideText.style.transform = `translateX(-${scrollPos}px)`;
+		let text = slide.querySelector('.slide__container');
 		text.style.transform = `translateX(-${scrollPos}px)`;
 	});
 });
@@ -54,9 +52,7 @@ function handleTouchMove(evt) {
 		}
 
 		slides.forEach((slide, index) => {
-			let sideText = slide.querySelector('.side__text');
-			let text = slide.querySelector('.text');
-			sideText.style.transform = `translateX(-${scrollPos}px)`;
+			let text = slide.querySelector('.slide__container');
 			text.style.transform = `translateX(-${scrollPos}px)`;
 		});
 	}
