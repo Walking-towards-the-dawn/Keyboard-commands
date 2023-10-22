@@ -19,15 +19,117 @@
         <h2 class="list__title">Git</h2>
 
         <ul class="list__items">
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
+          <h3>Getting & Creating Projects</h3>
+          <li>
+            <div class="command">$ git init</div>
+            <div class="description">Ініціалізація локального сховища Git</div>
+          </li>
+
+          <li>
+            <div class="command">$ git clone [url]
+            </div>
+            <div class="description">Створити локальну копію віддаленого репозиторію</div>
+          </li>
+
+          <h3>Basic Snapshotting</h3>
+          <li>
+            <div class="command">$ git status</div>
+            <div class="description">Перевірте статус</div>
+          </li>
+
+          <li>
+            <div class="command">$ git add [file-name.txt]</div>
+            <div class="description">Додати файл до робочої області</div>
+          </li>
+
+          <li>
+            <div class="command">$ git add -A</div>
+            <div class="description">
+              Додати всі нові та змінені файли до робочої області
+            </div>
+          </li>
+
+          <li>
+            <div class="command">$ git commit -m "[commit message]"</div>
+            <div class="description">Зафіксувати зміни</div>
+          </li>
+
+          <li>
+            <div class="command">$ git rm -r [file-name.txt]</div>
+            <div class="description">Видалення файлу (або папки)</div>
+          </li>
+
+          <h3>Branching & Merging</h3>
+          <li>
+            <div class="command">$ git branch</div>
+            <div class="description">Список гілок (зірочка позначає поточну гілку)</div>
+          </li>
+
+          <li>
+            <div class="command">$ git branch [branch name]</div>
+            <div class="description">Створити нову гілку</div>
+          </li>
+
+          <li>
+            <div class="command">$ git branch -d [branch name]</div>
+            <div class="description">Видалити гілку</div>
+          </li>
+
+          <li>
+            <div class="command">$ git push origin --delete [branch name]</div>
+            <div class="description">Видалити віддалену гілку</div>
+          </li>
+
+          <li>
+            <div class="command">$ git checkout -b [branch name]</div>
+            <div class="description">Створити нову гілку та перейти до неї</div>
+          </li>
+
+          <li>
+            <div class="command">$ git checkout -b [branch name] origin/[branch name
+            </div>
+            <div class="description">Клонувати віддалену гілку та перейти до неї</div>
+          </li>
+
+          <li>
+            <div class="command">$ git branch -m [old branch name] [new branch name]</div>
+            <div class="description">Перейменувати локальну гілку</div>
+          </li>
+
+          <li>
+            <div class="command">$ git checkout [branch name]</div>
+            <div class="description">Перейти до гілки</div>
+          </li>
+
+          <li>
+            <div class="command">$ git checkout -</div>
+            <div class="description">Перейти до гілки, яка остання виписувалася</div>
+          </li>
+
+          <li>
+            <div class="command">$ git checkout -- [file-name.txt]</div>
+            <div class="description">Скасувати зміни у файлі</div>
+          </li>
+
+          <li>
+            <div class="command">$ git merge [branch name]</div>
+            <div class="description">Об’єднати гілку в активну гілку</div>
+          </li>
+
+          <li>
+            <div class="command">$ git merge [source branch] [target branch]</div>
+            <div class="description">Об’єднати гілку в цільову гілку</div>
+          </li>
+
+          <li>
+            <div class="command">$ git stash</div>
+            <div class="description">Зберегти зміни в брудному робочому каталозі</div>
+          </li>
+
+          <li>
+            <div class="command">$ git stash clear</div>
+            <div class="description">Видалити усі приховані записи</div>
+          </li>
 
         </ul>
       </div>

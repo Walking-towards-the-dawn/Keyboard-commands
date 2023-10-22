@@ -25,8 +25,14 @@ h2 {
 	padding: 24px 0;
 }
 
+h3 {
+	font-size: 24px;
+	margin-top: 80px;
+	text-align: start;
+}
+
 ul {
-	padding: 40px;
+	padding: 0 40px;
 	list-style: none;
 }
 
@@ -48,16 +54,38 @@ ul {
 	padding: 10px 20px;
 }
 
+.command {
+	text-align: start;
+	color: #f35b5d;
+}
+
+.description {
+	text-align: end;
+}
+
+.list__items li {
+	padding: 24px 0;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid rgb(255 255 255 / 12%);
+}
+
+.list__items li:first-child {
+	margin-top: 0;
+}
+
+.list__items li:last-child {
+	border-bottom: none;
+}
+
+/*---------------------------------*/
 .list__container-git {
 	border: 2px solid #f35b5d;
 }
 .list__container-git .list__title {
 	background: #f35b5d;
 }
-.list__container-git .list__items span {
-	border: 2px solid #f35b5d;
-}
-
+/*---------------------------------*/
 .list__container-vs_code {
 	border: 2px solid #d69323;
 }
@@ -67,7 +95,7 @@ ul {
 .list__container-vs_code .list__items span {
 	border: 2px solid #d69323;
 }
-
+/*---------------------------------*/
 .list__container-linux {
 	border: 2px solid #49b892;
 }
@@ -77,7 +105,7 @@ ul {
 .list__container-linux .list__items span {
 	border: 2px solid #49b892;
 }
-
+/*---------------------------------*/
 .list__container-other-1 {
 	border: 2px solid #573081;
 }
@@ -87,7 +115,7 @@ ul {
 .list__container-other-1 .list__items span {
 	border: 2px solid #573081;
 }
-
+/*---------------------------------*/
 .list__container-other-2 {
 	border: 2px solid #fc5c3c;
 }
@@ -97,7 +125,7 @@ ul {
 .list__container-other-2 .list__items span {
 	border: 2px solid #fc5c3c;
 }
-
+/*---------------------------------*/
 .list__container-other-3 {
 	border: 2px solid #777777;
 }
@@ -107,22 +135,19 @@ ul {
 .list__container-other-3 .list__items span {
 	border: 2px solid #777777;
 }
-
-.list__items li {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin-top: 40px;
-}
-
-.list__items li:first-child {
-	margin-top: 0;
-}
-
+/*---------------------------------*/
 @media (max-width: 520px) {
+	body {
+		font-size: 14px;
+	}
+
 	h1 {
+		padding: 40px 0;
 		font-size: 40px;
+	}
+
+	h2 {
+		padding: 18px 0;
 	}
 
 	.list__title {
@@ -130,10 +155,14 @@ ul {
 	}
 
 	ul {
-		padding: 22px;
+		padding: 15px;
 	}
 
 	.list__items span {
 		margin: 6px 7px 0;
+	}
+
+	.list__items li {
+		text-align: start;
 	}
 }
