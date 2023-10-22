@@ -26,7 +26,7 @@ h2 {
 }
 
 ul {
-	padding: 20px;
+	padding: 40px;
 	list-style: none;
 }
 
@@ -43,28 +43,97 @@ ul {
 	transition: 0.8s ease;
 }
 
-.list__container-git {
-	border: 2px solid #f35b5d;
-}
-
-.list__title {
-	background: #f35b5d;
-}
-
-.list__items > li {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 20px;
-}
-
-.list__items > li:first-child {
-	margin-top: 0;
-}
-
 .list__items span {
 	margin: 0 12px;
 	padding: 10px 20px;
+}
+
+.list__container-git {
 	border: 2px solid #f35b5d;
+}
+.list__container-git .list__title {
+	background: #f35b5d;
+}
+.list__container-git .list__items span {
+	border: 2px solid #f35b5d;
+}
+
+.list__container-vs_code {
+	border: 2px solid #d69323;
+}
+.list__container-vs_code .list__title {
+	background: #d69323;
+}
+.list__container-vs_code .list__items span {
+	border: 2px solid #d69323;
+}
+
+.list__container-linux {
+	border: 2px solid #49b892;
+}
+.list__container-linux .list__title {
+	background: #49b892;
+}
+.list__container-linux .list__items span {
+	border: 2px solid #49b892;
+}
+
+.list__container-other-1 {
+	border: 2px solid #573081;
+}
+.list__container-other-1 .list__title {
+	background: #573081;
+}
+.list__container-other-1 .list__items span {
+	border: 2px solid #573081;
+}
+
+.list__container-other-2 {
+	border: 2px solid #fc5c3c;
+}
+.list__container-other-2 .list__title {
+	background: #fc5c3c;
+}
+.list__container-other-2 .list__items span {
+	border: 2px solid #fc5c3c;
+}
+
+.list__container-other-3 {
+	border: 2px solid #777777;
+}
+.list__container-other-3 .list__title {
+	background: #777777;
+}
+.list__container-other-3 .list__items span {
+	border: 2px solid #777777;
+}
+
+.list__items li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.list__items li:first-child {
+	margin-top: 0;
+}
+
+@media (max-width: 520px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	.list__title {
+		font-size: 24px;
+	}
+
+	ul {
+		padding: 22px;
+	}
+
+	.list__items span {
+		margin: 6px 7px 0;
+	}
 }
