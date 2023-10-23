@@ -21,6 +21,7 @@ h1 {
 }
 
 h2 {
+	color: #fff;
 	font-size: 40px;
 	padding: 24px 0;
 }
@@ -44,7 +45,7 @@ ul {
 	margin: 0 auto 60px;
 	text-align: center;
 	max-width: 800px;
-	color: white;
+	color: #9e9e9e;
 	line-height: 24px;
 	transition: 0.8s ease;
 }
@@ -55,17 +56,21 @@ ul {
 }
 
 .command {
+	max-width: 360px;
 	text-align: start;
 	color: #f35b5d;
 }
 
 .description {
+	max-width: 360px;
 	text-align: end;
+	padding-left: 15px;
 }
 
 .list__items li {
 	padding: 24px 0;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	border-bottom: 2px solid rgb(255 255 255 / 12%);
 }
@@ -106,39 +111,25 @@ ul {
 	border: 2px solid #49b892;
 }
 /*---------------------------------*/
-.list__container-other-1 {
-	border: 2px solid #573081;
-}
-.list__container-other-1 .list__title {
-	background: #573081;
-}
-.list__container-other-1 .list__items span {
-	border: 2px solid #573081;
-}
-/*---------------------------------*/
-.list__container-other-2 {
-	border: 2px solid #fc5c3c;
-}
-.list__container-other-2 .list__title {
+/*background: #573081;
 	background: #fc5c3c;
-}
-.list__container-other-2 .list__items span {
-	border: 2px solid #fc5c3c;
-}
-/*---------------------------------*/
-.list__container-other-3 {
-	border: 2px solid #777777;
-}
-.list__container-other-3 .list__title {
-	background: #777777;
-}
-.list__container-other-3 .list__items span {
-	border: 2px solid #777777;
-}
+	background: #777777;*/
 /*---------------------------------*/
 @media (max-width: 520px) {
 	body {
 		font-size: 14px;
+	}
+
+	ul {
+		padding: 15px;
+	}
+
+	.list__items li {
+		text-align: start;
+	}
+
+	.list__items span {
+		margin: 6px 7px 0;
 	}
 
 	h1 {
@@ -150,19 +141,11 @@ ul {
 		padding: 18px 0;
 	}
 
+	.list__container-git h3:first-of-type {
+		margin-top: 20px;
+	}
+
 	.list__title {
 		font-size: 24px;
-	}
-
-	ul {
-		padding: 15px;
-	}
-
-	.list__items span {
-		margin: 6px 7px 0;
-	}
-
-	.list__items li {
-		text-align: start;
 	}
 }

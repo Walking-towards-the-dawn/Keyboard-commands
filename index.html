@@ -26,7 +26,7 @@
           </li>
 
           <li>
-            <div class="command">$ git clone [url]
+            <div class="command">$ git clone [URL]
             </div>
             <div class="description">Створити локальну копію віддаленого репозиторію</div>
           </li>
@@ -34,7 +34,7 @@
           <h3>Basic Snapshotting</h3>
           <li>
             <div class="command">$ git status</div>
-            <div class="description">Перевірте статус</div>
+            <div class="description">Перевірити статус</div>
           </li>
 
           <li>
@@ -66,6 +66,11 @@
           </li>
 
           <li>
+            <div class="command">$ git branch -a</div>
+            <div class="description">Список усих гілок(локальних і віддалених)</div>
+          </li>
+
+          <li>
             <div class="command">$ git branch [branch name]</div>
             <div class="description">Створити нову гілку</div>
           </li>
@@ -86,7 +91,7 @@
           </li>
 
           <li>
-            <div class="command">$ git checkout -b [branch name] origin/[branch name
+            <div class="command">$ git checkout -b [branch name] origin/[branch name]
             </div>
             <div class="description">Клонувати віддалену гілку та перейти до неї</div>
           </li>
@@ -103,7 +108,7 @@
 
           <li>
             <div class="command">$ git checkout -</div>
-            <div class="description">Перейти до гілки, яка остання виписувалася</div>
+            <div class="description">Перемикає на попередню гілку, на якій ви перебували</div>
           </li>
 
           <li>
@@ -123,13 +128,80 @@
 
           <li>
             <div class="command">$ git stash</div>
-            <div class="description">Зберегти зміни в брудному робочому каталозі</div>
+            <div class="description">Збереже всі зміни в робочому каталозі і індексі, і автоматично призначить їм
+              дефолтний опис</div>
           </li>
 
           <li>
             <div class="command">$ git stash clear</div>
             <div class="description">Видалити усі приховані записи</div>
           </li>
+
+          <h3>Sharing & Updating Projects</h3>
+          <li>
+            <div class="command">$ git push origin [branch name]</div>
+            <div class="description">Надіслати гілку до свого віддаленого сховища</div>
+          </li>
+
+          <li>
+            <div class="command">$ git push -u origin [branch name]</div>
+            <div class="description">Надіслати зміни до віддаленого сховища (і запам’ятати гілку)</div>
+          </li>
+
+          <li>
+            <div class="command">$ git push</div>
+            <div class="description">Надіслати зміни до віддаленого сховища (збережена гілка)</div>
+          </li>
+
+          <li>
+            <div class="command">$ git push origin --delete [branch name]</div>
+            <div class="description">Видалити віддалену гілку</div>
+          </li>
+
+          <li>
+            <div class="command">$ git pull</div>
+            <div class="description">Оновити локальне сховище до останнього коміту</div>
+          </li>
+
+          <li>
+            <div class="command">$ git pull origin [branch name]</div>
+            <div class="description">Отримати зміни з віддаленого сховища</div>
+          </li>
+
+          <li>
+            <div class="command">$ git remote add origin [URL]</div>
+            <div class="description">Додайти віддалене сховище</div>
+          </li>
+
+          <li>
+            <div class="command">$ git remote set-url origin [URL]</div>
+            <div class="description">Для зміни посилання на новий сервер або для переключення на інший URL
+              репозиторій
+            </div>
+          </li>
+
+          <h3>Inspection & Comparison</h3>
+          <li>
+            <div class="command">$ git log</div>
+            <div class="description">Переглянути зміни</div>
+          </li>
+
+          <li>
+            <div class="command">$ git log --summary</div>
+            <div class="description">Переглянути зміни (детально)</div>
+          </li>
+
+          <li>
+            <div class="command">$ git log --oneline</div>
+            <div class="description">Переглянути зміни (коротко)</div>
+          </li>
+
+          <li>
+            <div class="command">$ git diff [source branch] [target branch]</div>
+            <div class="description">Переглянути зміни перед об’єднанням</div>
+          </li>
+
+
 
         </ul>
       </div>
@@ -241,75 +313,100 @@
         <h2 class="list__title">Linux</h2>
 
         <ul class="list__items">
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
+          <li>
+            <div>Вирізати/Видалити рядок</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Вставити рядок нижче</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Вставити рядок вище</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Прокрутити вгору</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Прокрутити вниз</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Перемістити рядок вгору</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Перемістити рядок вниз</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Перейти до наступної позиції</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Повернутися в попереднє положення</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Знайти файл</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Палітра команд</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Запропонувати тригер/властивість</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Знайти/замінити у файлі</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Пакет збірки</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Форматувати документ</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Зберегти</div>
+            <div><span>Shift</span>+<span>Delete</span></div>
+          </li>
+
+          <li>
+            <div>Зберегти все</div>
+            <div><span>Ctrl</span>+<span>S</span>+<span>K</span></div>
+          </li>
+
+          <li>
+            <div>Закрити вікно</div>
+            <div><span>Ctrl</span>+<span>W</span></div>
+          </li>
+
         </ul>
       </div>
     </div>
 
-
-    <div class="list">
-      <div class="list__container list__container-other-1">
-        <h2 class="list__title">Other</h2>
-
-        <ul class="list__items">
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="list">
-      <div class="list__container list__container-other-2">
-        <h2 class="list__title">Other</h2>
-
-        <ul class="list__items">
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="list">
-      <div class="list__container list__container-other-3">
-        <h2 class="list__title">Other</h2>
-
-        <ul class="list__items">
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-          <li>Вирізати/Видалити рядок<span>Shift</span>+<span>Delete</span></li>
-        </ul>
-      </div>
-    </div>
 
   </div>
 </body>
