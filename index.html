@@ -310,98 +310,273 @@
 
     <div class="list">
       <div class="list__container list__container-linux">
-        <h2 class="list__title">Linux</h2>
+        <h2 class="list__title">Fedora Linux</h2>
 
         <ul class="list__items">
           <li>
-            <div>Вирізати/Видалити рядок</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ cd</div>
+            <div class="description">
+              Перейти в домашню папку
+            </div>
           </li>
 
           <li>
-            <div>Вставити рядок нижче</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ cd -</div>
+            <div class="description">
+              Переміститися до попередньої папку
+            </div>
           </li>
 
           <li>
-            <div>Вставити рядок вище</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ cd ..</div>
+            <div class="description">
+              Переміститися на один каталог вгору
+            </div>
           </li>
 
           <li>
-            <div>Прокрутити вгору</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ clear / Ctrl + L</div>
+            <div class="description">
+              Очищає вікно терміналу від усих повідомлень
+            </div>
           </li>
 
           <li>
-            <div>Прокрутити вниз</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ history</div>
+            <div class="description">
+              Відображає всі нещодавно введені вами команди
+            </div>
           </li>
 
           <li>
-            <div>Перемістити рядок вгору</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ whatis ім`я_пакету</div>
+            <div class="description">
+              Відображає короткий опис будь-якої програми
+            </div>
           </li>
 
           <li>
-            <div>Перемістити рядок вниз</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ whereis ім`я_пакету</div>
+            <div class="description">
+              Відображає розташування файлу потрібної програми
+            </div>
           </li>
 
           <li>
-            <div>Перейти до наступної позиції</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ sudo dnf install ім`я_пакету</div>
+            <div class="description">
+              Встановити пакет
+            </div>
           </li>
 
           <li>
-            <div>Повернутися в попереднє положення</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ sudo dnf update / sudo dnf check-update</div>
+            <div class="description">
+              Оновити інформацію про пакети
+            </div>
           </li>
 
           <li>
-            <div>Знайти файл</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ sudo dnf upgrade</div>
+            <div class="description">
+              Оновити всі пакети до найсвіжіших (виконувати після dnf update)
+            </div>
           </li>
 
           <li>
-            <div>Палітра команд</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ sudo dnf remove ім`я_пакету</div class="description">
+            <div>
+              Видалити непотрібний пакет
+            </div>
           </li>
 
           <li>
-            <div>Запропонувати тригер/властивість</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ sudo dnf purge ім`я_пакету</div>
+            <div class="description">
+              Видалити непотрібний пакет із усіма залежностями
+            </div>
           </li>
 
           <li>
-            <div>Знайти/замінити у файлі</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ sudo dnf autoremove</div>
+            <div class="description">
+              Видалити всі непотрібні залежності
+            </div>
           </li>
 
           <li>
-            <div>Пакет збірки</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ kill / kill PID_процесу</div>
+            <div class="description">
+              Примусове завершення процесів. PID процесу можна дізнатися, ввівши top
+            </div>
           </li>
 
           <li>
-            <div>Форматувати документ</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ xkill</div>
+            <div class="description">
+              Команда для завершення процесів. Після введення команди потрібно клацнути по тому вікну, яке потрібно
+              закрити
+            </div>
           </li>
 
           <li>
-            <div>Зберегти</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div class="command">~ killall</div>
+            <div class="description">
+              Завершує процеси з певним іменем. Наприклад, killall firefox
+            </div>
           </li>
 
           <li>
-            <div>Зберегти все</div>
-            <div><span>Ctrl</span>+<span>S</span>+<span>K</span></div>
+            <div class="command">~ cat</div>
+            <div class="description">
+              Використовується для виведення вмісту файлу командного рядка
+            </div>
           </li>
 
           <li>
-            <div>Закрити вікно</div>
-            <div><span>Ctrl</span>+<span>W</span></div>
+            <div class="command">~ cat > ім`я_файлу</div>
+            <div class="description">Створює новий файл</div>
           </li>
+
+          <li>
+            <div class="command">~ cat ім`я_файлу(1) ім`я_файлу(2) > ім`я_файлу(3)</div>
+            <div class="description">
+              Поєднує два файли (1 і 2) і збереже їх вміст у новому файлі (3)
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ chmod</div>
+            <div class="description">
+              Дозволяє змінювати права доступу до файлу. Може стати в нагоді, якщо ви хочете внести зміни до
+              системного файлу
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ chown</div>
+            <div class="description">
+              Змінює власника файлу чи каталогу. Слід виконувати із правами суперкористувача. Наприклад, chown
+              user:group ваш_файл змінить власника та групу файлу на задані
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ file</div>
+            <div class="description">
+              Виводить інформацію про вказаний файл
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ rename</div>
+            <div class="description">
+              Перейменовує один або декілька файлів
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ mkdir ім'я_каталогу</div>
+            <div class="description">
+              Для створення нового каталогу
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ mkdir ім`я_каталогу(1)/ім`я_каталогу(2)</div>
+            <div class="description">
+              Cтворює новий каталог усередині іншого каталогу
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ mkdir -p ім`я_каталогу(1)/ім`я_каталогу(2)/ім`я_каталогу(3)</div>
+            <div class="description">
+              Створює каталог між двома існуючими каталогами
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ rmdir</div>
+            <div class="description">
+              Використовується для видалення файлів
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ cp</div>
+            <div class="description">
+              Для копіювання файлів із поточного каталогу до іншого каталогу. Наприклад, команда cp
+              scenery.jpg/home/username/Pictures створить копію scenery.jpg (з поточного каталогу) до каталогу
+              Pictures
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ mv</div>
+            <div class="description">
+              Переміщує файл із однієї папки до іншої. Аргументи в mv схожі з аргументами команди cp. Наприклад: mv
+              file.txt/home/username/Documents
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ grep</div>
+            <div class="description">
+              Пошук текстових файлів, які містять певні рядки
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ locate</div>
+            <div class="description">
+              Пошук файлів та папок, чиї назви відповідають запиту, та відображеє їх шлях у файловій системі
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ ls</div>
+            <div class="description">
+              Використовується для перегляду вмісту каталогу
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ la -la</div>
+            <div class="description">
+              Використовується для перегляду всього вмісту каталогу
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ ls -R</div>
+            <div class="description">
+              Виводить список усіх файлів у підкаталогах
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ ls -a</div>
+            <div class="description">
+              Показує приховані файли
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ ls -al</div>
+            <div class="description">
+              Виведить список файлів та каталогів з детальною інформацією
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ touch</div>
+            <div class="description">
+              Дозволяє створити новий порожній файл. Наприклад , touch /home/username/Documents/Web.html , щоб створити
+              файл HTML з назвою Web у каталозі Documents
+            </div>
+          </li>
+
 
         </ul>
       </div>
