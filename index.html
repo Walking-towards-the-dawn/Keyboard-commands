@@ -213,36 +213,43 @@
         <h2 class="list__title">Visual Studio Code</h2>
 
         <ul class="list__items">
+          <h3>General</h3>
           <li>
-            <div>Вирізати/Видалити рядок</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div>Показати палітру команд</div>
+            <div><span>Ctrl</span>+<span>Shift</span>+<span>P
+              </span>or<span>F1</span>
+            </div>
           </li>
 
           <li>
-            <div>Вставити рядок нижче</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div>Швидке відкриття, Перейти до файлу...</div>
+            <div><span>Ctrl</span>+<span>P</span></div>
           </li>
 
           <li>
-            <div>Вставити рядок вище</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div>Нове вікно/екземпляр</div>
+            <div><span>Ctrl</span>+<span>Shift</span>+<span>N</span></div>
           </li>
 
           <li>
-            <div>Прокрутити вгору</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div>Закрити вікно/екземпляр</div>
+            <div><span>Ctrl</span>+<span>Shift</span>+<span>W</span></div>
           </li>
 
           <li>
-            <div>Прокрутити вниз</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div>Налаштування користувача</div>
+            <div><span>Ctrl</span>+<span>,</span></div>
           </li>
 
           <li>
-            <div>Перемістити рядок вгору</div>
-            <div><span>Shift</span>+<span>Delete</span></div>
+            <div>Гарячі клавіши</div>
+            <div class="shortcuts">
+              <span>Ctrl</span>+<span>K</span>
+              <span>Ctrl</span>+<span>S</span>
+            </div>
           </li>
 
+          <h3>Basic editing</h3>
           <li>
             <div>Перемістити рядок вниз</div>
             <div><span>Shift</span>+<span>Delete</span></div>
@@ -307,7 +314,6 @@
       </div>
     </div>
 
-
     <div class="list">
       <div class="list__container list__container-linux">
         <h2 class="list__title">Fedora Linux</h2>
@@ -335,6 +341,13 @@
           </li>
 
           <li>
+            <div class="command">~ pwd</div>
+            <div class="description">
+              Показати поточний каталог
+            </div>
+          </li>
+
+          <li>
             <div class="command">~ clear / Ctrl + L</div>
             <div class="description">
               Очищає вікно терміналу від усих повідомлень
@@ -349,21 +362,28 @@
           </li>
 
           <li>
-            <div class="command">~ whatis ім`я_пакету</div>
+            <div class="command">~ whatis назва_пакету</div>
             <div class="description">
               Відображає короткий опис будь-якої програми
             </div>
           </li>
 
           <li>
-            <div class="command">~ whereis ім`я_пакету</div>
+            <div class="command">~ whereis назва_пакету</div>
             <div class="description">
               Відображає розташування файлу потрібної програми
             </div>
           </li>
 
           <li>
-            <div class="command">~ sudo dnf install ім`я_пакету</div>
+            <div class="command">~ sudo su -</div>
+            <div class="description">
+              Команди будуть виконуватися від імені суперкористувача
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ sudo dnf install назва_пакету</div>
             <div class="description">
               Встановити пакет
             </div>
@@ -384,14 +404,14 @@
           </li>
 
           <li>
-            <div class="command">~ sudo dnf remove ім`я_пакету</div class="description">
+            <div class="command">~ sudo dnf remove назва_пакету</div class="description">
             <div>
               Видалити непотрібний пакет
             </div>
           </li>
 
           <li>
-            <div class="command">~ sudo dnf purge ім`я_пакету</div>
+            <div class="command">~ sudo dnf purge назва_пакету</div>
             <div class="description">
               Видалити непотрібний пакет із усіма залежностями
             </div>
@@ -427,28 +447,9 @@
           </li>
 
           <li>
-            <div class="command">~ cat</div>
-            <div class="description">
-              Використовується для виведення вмісту файлу командного рядка
-            </div>
-          </li>
-
-          <li>
-            <div class="command">~ cat > ім`я_файлу</div>
-            <div class="description">Створює новий файл</div>
-          </li>
-
-          <li>
-            <div class="command">~ cat ім`я_файлу(1) ім`я_файлу(2) > ім`я_файлу(3)</div>
-            <div class="description">
-              Поєднує два файли (1 і 2) і збереже їх вміст у новому файлі (3)
-            </div>
-          </li>
-
-          <li>
             <div class="command">~ chmod</div>
             <div class="description">
-              Дозволяє змінювати права доступу до файлу. Може стати в нагоді, якщо ви хочете внести зміни до
+              Змінює права доступу до файлу. Може стати в нагоді, якщо ви хочете внести зміни до
               системного файлу
             </div>
           </li>
@@ -476,35 +477,67 @@
           </li>
 
           <li>
-            <div class="command">~ mkdir ім'я_каталогу</div>
+            <div class="command">~ mkdir назва_каталогу</div>
             <div class="description">
-              Для створення нового каталогу
+              Створює новий каталог
             </div>
           </li>
 
           <li>
-            <div class="command">~ mkdir ім`я_каталогу(1)/ім`я_каталогу(2)</div>
+            <div class="command">~ mkdir назва_каталогу(1) / назва_каталогу(2)</div>
             <div class="description">
               Cтворює новий каталог усередині іншого каталогу
             </div>
           </li>
 
           <li>
-            <div class="command">~ mkdir -p ім`я_каталогу(1)/ім`я_каталогу(2)/ім`я_каталогу(3)</div>
+            <div class="command">~ mkdir -p назва_каталогу(1) /назва_каталогу(2) / назва_каталогу(3)</div>
             <div class="description">
               Створює каталог між двома існуючими каталогами
             </div>
           </li>
 
           <li>
-            <div class="command">~ rmdir</div>
+            <div class="command">~ rm назва_файлу</div>
             <div class="description">
-              Використовується для видалення файлів
+              Використовується для видалення файлів. Наприклад, rm /шлях/до/файлу/myfile.txt
             </div>
           </li>
 
           <li>
-            <div class="command">~ cp</div>
+            <div class="command">~ rm -r назва_каталогу</div>
+            <div class="description">
+              Видаляє каталог з усім його вмістом
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ rm -f назва_файлу</div>
+            <div class="description">
+              Видалить форсовано(швидше) файл
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ rm -rf назва_каталогу</div>
+            <div class="description">
+              Видалить форсовано(швидше) каталог
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ mv</div>
+            <div class="description">
+              Використовується для переміщення або перейменування файлів і каталогів. Наприклад, mv file.txt
+              /шлях/до/цільового/каталогу/ (Перемістити файл "file.txt" з поточного каталогу в інший каталог). mv
+              oldname.txt newname.txt (Перейменувати файл "oldname.txt" на "newname.txt" в поточному каталозі). mv
+              folder(1) /шлях/до/цільового/каталогу/ (Перемістити каталог "folder(1)" в інший каталог)
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ cp назва_файлу(1) назва_файлу(2)
+            </div>
             <div class="description">
               Для копіювання файлів із поточного каталогу до іншого каталогу. Наприклад, команда cp
               scenery.jpg/home/username/Pictures створить копію scenery.jpg (з поточного каталогу) до каталогу
@@ -513,7 +546,15 @@
           </li>
 
           <li>
-            <div class="command">~ mv</div>
+            <div class="command">~ cp -r назва_каталогу(1) назва_каталогу(2)</div>
+            <div class="description">
+              Скопіює каталог(1) в каталог(2), створить каталог(2) якщо його не існує
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ mv назва_файлу(1) назва_файлу(2)
+            </div>
             <div class="description">
               Переміщує файл із однієї папки до іншої. Аргументи в mv схожі з аргументами команди cp. Наприклад: mv
               file.txt/home/username/Documents
@@ -565,14 +606,34 @@
           <li>
             <div class="command">~ ls -al</div>
             <div class="description">
-              Виведить список файлів та каталогів з детальною інформацією
+              Виводить список файлів та каталогів з детальною інформацією
             </div>
           </li>
 
           <li>
-            <div class="command">~ touch</div>
+            <div class="command">~ cat</div>
             <div class="description">
-              Дозволяє створити новий порожній файл. Наприклад , touch /home/username/Documents/Web.html , щоб створити
+              Використовується для виведення вмісту файлу командного рядка
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ cat > назва_файлу</div>
+            <div class="description">Створює новий файл</div>
+          </li>
+
+          <li>
+            <div class="command">~ cat назва_файлу(1) назва_файлу(2) > назва_файлу(3)</div>
+            <div class="description">
+              Поєднує два файли (1 і 2) і збереже їх вміст у новому файлі (3)
+            </div>
+          </li>
+
+          <li>
+            <div class="command">~ touch назва_файлу</div>
+            <div class="description">
+              Дозволяє створити новий порожній файл. Наприклад , touch /home/username/Documents/Web.html , щоб
+              створити
               файл HTML з назвою Web у каталозі Documents
             </div>
           </li>

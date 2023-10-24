@@ -28,7 +28,7 @@ h2 {
 
 h3 {
 	font-size: 24px;
-	margin-top: 80px;
+	margin-top: 60px;
 	text-align: start;
 	color: #fff;
 }
@@ -101,6 +101,7 @@ ul {
 	background: #d69323;
 }
 .list__container-vs_code .list__items span {
+	max-width: 360px;
 	border: 2px solid #d69323;
 }
 /*---------------------------------*/
@@ -110,11 +111,15 @@ ul {
 .list__container-linux .list__title {
 	background: #49b892;
 }
-
 .list__container-linux .command {
 	color: #49b892;
 }
-
+.list__container-linux ul > li:first-of-type {
+	margin-top: 40px;
+}
+.list__container-linux ul > li:last-of-type {
+	margin-bottom: 40px;
+}
 /*---------------------------------*/
 /*background: #573081;
 	background: #fc5c3c;
