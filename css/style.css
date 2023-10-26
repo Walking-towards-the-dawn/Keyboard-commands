@@ -58,7 +58,6 @@ ul {
 .description {
 	max-width: 360px;
 	text-align: end;
-	padding-left: 15px;
 }
 
 .list__items li {
@@ -99,6 +98,10 @@ ul {
 	margin: 0 12px;
 	padding: 10px 20px;
 	border: 2px solid #d69323;
+}
+.description__shortcuts {
+	max-width: 360px;
+	text-align: start;
 }
 .shortcuts {
 	display: flex;
@@ -148,33 +151,37 @@ ul {
 	body {
 		font-size: 14px;
 	}
-
 	ul {
 		padding: 15px;
 	}
-
 	.list__items li {
 		text-align: start;
 	}
-
 	.list__container-vs_code .list__items span {
 		margin: 12px;
 	}
-
 	h1 {
 		padding: 40px 0;
 		font-size: 40px;
 	}
-
 	h2 {
 		padding: 18px 0;
 	}
-
 	.list__container-git h3:first-of-type {
 		margin-top: 20px;
 	}
-
 	.list__title {
 		font-size: 24px;
+	}
+	.command {
+		width: 100%;
+		margin-bottom: 8px;
+	}
+	.description {
+		text-align: start;
+	}
+	.description__shortcuts {
+		width: 100%;
+		padding-left: 12px;
 	}
 }
