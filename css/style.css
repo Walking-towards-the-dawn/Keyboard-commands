@@ -151,15 +151,6 @@ ul {
 	body {
 		font-size: 14px;
 	}
-	ul {
-		padding: 15px;
-	}
-	.list__items li {
-		text-align: start;
-	}
-	.list__container-vs_code .list__items span {
-		margin: 12px;
-	}
 	h1 {
 		padding: 40px 0;
 		font-size: 40px;
@@ -167,8 +158,11 @@ ul {
 	h2 {
 		padding: 18px 0;
 	}
-	.list__container-git h3:first-of-type {
-		margin-top: 20px;
+	ul {
+		padding: 15px;
+	}
+	.list__items li {
+		text-align: start;
 	}
 	.list__title {
 		font-size: 24px;
@@ -180,8 +174,17 @@ ul {
 	.description {
 		text-align: start;
 	}
+	.list__container-git h3:first-of-type {
+		margin-top: 20px;
+	}
+	.list__container-vs_code h3 {
+		padding-left: 12px;
+	}
 	.description__shortcuts {
 		width: 100%;
 		padding-left: 12px;
+	}
+	.list__container-vs_code .list__items span {
+		margin: 12px;
 	}
 }
